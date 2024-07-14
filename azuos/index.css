@@ -1,0 +1,85 @@
+body {
+/*  background-image: url('assets/wallpapers/blackGrid.jpg'); 
+  background-repeat: no-repeat; */
+  background-color: #110b17;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/inter/Inter-Regular.ttf');
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	color: white;
+	font-family: 'Inter';
+}
+
+.navbar {
+	background-color: #ffffff20;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+}
+
+/*.main {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	left: 0;
+	top: 45px;
+}*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: 400px;
+}
+
+.center {
+  justify-content: center;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+	font-size: 30px;
+	margin-bottom: 0;
+}
+
+.topcolor {
+  background: linear-gradient(#ba30c9, #8332c9);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+button {
+  background-color: #1e112c;
+  border: 2px solid #2d1b40;
+  border-radius: 5px;
+  color: white;
+  font-family: inter;
+  padding: 10px 26px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0px 0px 7px #000000;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #231433;
+  font-size: 17px;
+}
+
+button:active {
+  background-color: #170d21;
+}
