@@ -1,11 +1,10 @@
 html, body, .stars {
 	height: 100%;
-	padding: 0;
 }
 
 body {
 /*	background-color: #8b86ea;*/
-	background: #6615A4;
+	background: #000000;
 	background: linear-gradient(0deg,rgba(102, 21, 164, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), #000000;
 	top: 0px;
 	bottom: 0px;
@@ -87,12 +86,6 @@ p, h1, h2, h3, h4, h5, h6, a, button {
   z-index: 9000; /* it's still over 9000!!! */
 }
 
-/*@media (max-width: 650px) {
-	.titlebar {
-		width: 70%;
-	}
-}*/
-
 .titlebar .logo {
 	filter: drop-shadow(0px 2px 4px #000000aa);
 }
@@ -137,22 +130,26 @@ p, h1, h2, h3, h4, h5, h6, a, button {
 /*	height: 688px*/
 /*	padding-top: 7.5%;
 	padding-bottom: 7.5%;*/
-	height: calc(60vh - 100px);
-	padding-top: 100px;
+	height: calc(25vh - 20px);
+	padding-top: 20px;
 /*	height: 72%;*/
 /*	height: calc(688px * (100vh / 1080));*/
 }
 
 .content {
 	background: #ffffff06;
-	border-top: 1px solid #ffffff40;
-	border-bottom: 1px solid #ffffff40;
-	margin-top: 70px;
-	height: auto; 
-	padding: 45px 107px;
+	border: 1px solid #ffffff40;
+	border-radius: 8px;
+	padding: 45px 50px;
+	width: calc(60% - 50px);
+	height: 500px;
 	backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
 	box-shadow: 0px -8px 48px #00000040;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 100px;
 }
 
 .noise {
@@ -362,128 +359,9 @@ p, h1, h2, h3, h4, h5, h6, a, button {
 	font-size: 17px;
 }
 
-@media (max-width: 1378px) {
-	.redefine-heading * {
-		font-size: 80px;
-	}
-
-	.redefine-heading {
-		gap: 20px;
-	}
-
-	.greeting {
-		font-size: 25px;
-		margin-bottom: 0px;
-	}
+.deadspace {
+	margin: 0;
+	padding: 0;
+	height: 2px;
 }
 
-@media (max-width: 965px) {
-	.redefine-heading * {
-		font-size: 50px;
-	}
-
-	.redefine-heading {
-		gap: 12px;
-	}
-
-	.motto * {
-		font-size: 40px;
-	}
-
-	.motto {
-		gap: 10px;
-	}
-
-	.greeting {
-		font-size: 20px;
-		margin-bottom: 0px;
-	}
-
-	.content {
-		padding: 45px 80px;
-	}
-
-	.content h1 {
-		font-size: 50px;
-	}
-
-	.content p {
-		font-size: 15px;
-	}
-}
-
-@media (max-width: 600px) {
-	.redefine-heading * {
-		font-size: 40px;
-	}
-
-	.redefine-heading {
-		gap: 7px;
-	}
-
-	.motto * {
-		font-size: 30px;
-	}
-
-	.motto {
-		gap: 7px;
-	}
-
-	.greeting {
-		font-size: 15px;
-		margin-bottom: 0px;
-		opacity: 0.5;
-	}
-
-	.main-buttons {
-		scale: 0.8;
-	}
-
-
-	.content {
-		padding: 30px 50px;
-	}
-
-	.content h1 {
-		font-size: 30px;
-	}
-
-	.content p {
-		font-size: 15px;
-	}
-}
-
-@media (max-width: 480px) {
-	.redefine-heading * {
-		font-size: 25px;
-	}
-
-	.redefine-heading {
-		gap: 5px;
-	}
-
-	.motto * {
-		font-size: 20px !important;
-	}	
-
-	.motto {
-		gap: 5px;
-	}
-
-	.main-buttons {
-		flex-direction: column;
-	}
-
-
-	.content {
-		padding: 20px 35px;
-	}
-
-	.content h1 {
-		font-size: 30px;
-	}
-
-	.content p {
-		font-size: 15px;
-	}
-}
