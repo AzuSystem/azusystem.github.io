@@ -233,10 +233,6 @@ nav .buttons button:active {
 	animation: glow 1s ease-in-out infinite alternate;
 }
 
-/*.design {
-	padding: ;
-}*/
-
 .content h1 {
 	font-family: "InstrumentSans";
 	font-size: 80px;
@@ -542,4 +538,36 @@ h6 {
 	margin: 0;
 	padding: 0;
 	height: 200px;
+}
+
+.noise {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 2%;
+}
+
+.stars {
+	background-blend-mode: hard-light;
+	mix-blend-mode: hard-light;
+	opacity: 70%;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: 0px;
+	padding: 0px;	
+	background-size: cover;
+	background-attachment: fixed;
+	position: fixed;
+}
+
+.stars > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; 
+	object-position: center;
+	position: fixed;
 }
