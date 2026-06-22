@@ -1,109 +1,105 @@
-html, body, .stars {
+html,
+body {
 	height: 100%;
 	padding: 0;
 }
 
 body {
-/*	background-color: #8b86ea;*/
-	background: #6615A4;
-	background: linear-gradient(0deg,rgba(102, 21, 164, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), #000000;
+	/*	background-color: #8b86ea;*/
+	background: #6615a4;
+	background: linear-gradient(
+			0deg,
+			rgba(102, 21, 164, 0.35) 0%,
+			rgba(0, 0, 0, 0.35) 100%
+		),
+		#000000;
 	top: 0px;
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
 	margin: 0px;
 	padding: 0px;
-/*	position: absolute;*/
-/*	overflow: hidden;*/
-/*	background-image: url('images/wallpaper.jpg');*/
 	background-size: cover;
 	background-attachment: fixed;
 }
 
-.stars {
-	background: url('images/stars.png'), url('images/starsblur.png');
-	background-blend-mode: hard-light;
-	mix-blend-mode: hard-light, hard-light, normal, normal;
-	opacity: 15%;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	margin: 0px;
-	padding: 0px;	
-	background-size: cover;
-	background-attachment: fixed;
-	position: fixed;
+@font-face {
+	font-family: "Inter";
+	src: url("fonts/InterVariable.woff2");
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('fonts/InterVariable.woff2');
+	font-family: "Satoshi";
+	src: url("fonts/Satoshi-Variable.woff");
 }
 
 @font-face {
-  font-family: 'Satoshi';
-  src: url('fonts/Satoshi-Variable.woff');
+	font-family: "InstrumentSans";
+	src: url("fonts/InstrumentSans-VariableFont.ttf");
 }
 
-@font-face {
-  font-family: 'InstrumentSans';
-  src: url('fonts/InstrumentSans-VariableFont.ttf');
-}
-
-p, h1, h2, h3, h4, h5, h6, a, button {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button {
 	color: white;
-	font-family: 'Inter';
+	font-family: "Inter";
 	text-shadow: 0px 0px 25px #000000cc;
 }
 
 .top-gradient {
-  background: linear-gradient(#110b1750, #00000000);
-  width: 100%;
-  height: 100px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 9000; /* it's over 9000!! */
+	background: linear-gradient(#110b1750, #00000000);
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9000; /* it's over 9000!! */
 }
 
-.titlebar {
-  padding-top: 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-/*  max-width: 488px;
+nav {
+	padding-top: 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	/*  max-width: 488px;
   min-width: 294px;
 	width: 100%;*/
 	width: clamp(294px, 80vw, 488px);
-  padding-left: 12px;
-  padding-right: 12px; 
-/*  position: relative;*/
+	padding-left: 12px;
+	padding-right: 12px;
+	/*  position: relative;*/
 	position: fixed;
 	top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 9000; /* it's still over 9000!!! */
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 9000; /* it's still over 9000!!! */
 }
 
 /*@media (max-width: 650px) {
-	.titlebar {
+	nav {
 		width: 70%;
 	}
 }*/
 
-.titlebar .logo {
+nav .logo {
 	filter: drop-shadow(0px 2px 4px #000000aa);
 }
 
-.titlebar .buttons {
+nav .buttons {
 	display: flex;
 	flex-direction: row;
 	gap: 6px;
 	width: 102px;
 }
-.titlebar .buttons button {
+nav .buttons a button {
+	cursor: pointer;
 	background: none;
 	border: 1px solid #ffffff20;
 	width: 30px;
@@ -117,12 +113,12 @@ p, h1, h2, h3, h4, h5, h6, a, button {
 	box-shadow: 0px 2px 4px #000000aa;
 }
 
-.titlebar .buttons button:hover {
+nav .buttons button:hover {
 	background: #ffffff07;
 	scale: 1.05;
 }
 
-.titlebar .buttons button:active {
+nav .buttons button:active {
 	background: #00000007;
 	scale: 0.95;
 }
@@ -132,15 +128,15 @@ p, h1, h2, h3, h4, h5, h6, a, button {
 	position: relative;
 	flex-direction: column;
 	align-items: center;
-  justify-content: center;
+	justify-content: center;
 	margin-top: 50px;
-/*	height: 688px*/
-/*	padding-top: 7.5%;
+	/*	height: 688px*/
+	/*	padding-top: 7.5%;
 	padding-bottom: 7.5%;*/
 	height: calc(60vh - 100px);
 	padding-top: 100px;
-/*	height: 72%;*/
-/*	height: calc(688px * (100vh / 1080));*/
+	/*	height: 72%;*/
+	/*	height: calc(688px * (100vh / 1080));*/
 }
 
 .content {
@@ -148,29 +144,17 @@ p, h1, h2, h3, h4, h5, h6, a, button {
 	border-top: 1px solid #ffffff40;
 	border-bottom: 1px solid #ffffff40;
 	margin-top: 70px;
-	height: auto; 
+	height: auto;
 	padding: 45px 107px;
 	backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
 	box-shadow: 0px -8px 48px #00000040;
 }
 
-.noise {
-	background: url('images/noise.png');
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	opacity: 2%;
-	background-size: cover;
-	background-attachment: fixed;
-}
-
 .greeting {
-	font-family: 'Inter';
+	font-family: "Inter";
 	font-weight: 300;
-	font-size: 30px;  /* outta scale down for my 900p display fr gng */
+	font-size: 30px; /* outta scale down for my 900p display fr gng */
 	margin: 0;
 	margin-bottom: -15px;
 }
@@ -182,7 +166,7 @@ p, h1, h2, h3, h4, h5, h6, a, button {
 }
 
 .redefine-heading * {
-	font-family: 'InstrumentSans';
+	font-family: "InstrumentSans";
 	font-weight: bold;
 	font-size: 107px; /* outta scale down for my 900p display fr vro */
 	margin: 0;
@@ -196,48 +180,57 @@ p, h1, h2, h3, h4, h5, h6, a, button {
 }
 
 .motto * {
-	background: linear-gradient(180deg,rgba(255, 87, 87, 0.35) 53%, rgba(194, 114, 255, 1) 100%), #ffffff;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-	font-family: 'Inter';
+	background: linear-gradient(
+			180deg,
+			rgba(255, 87, 87, 0.35) 53%,
+			rgba(194, 114, 255, 1) 100%
+		),
+		#ffffff;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	font-family: "Inter";
 	font-weight: 300;
-	font-size: 53px;  /* outta scale down for my 900p display fr twin */
+	font-size: 53px; /* outta scale down for my 900p display fr twin */
 	margin: 0;
 	text-shadow: 0 4px 12px #00000073;
 	margin-top: 5px;
 }
 
 .glow-motto {
-	background: linear-gradient(180deg,rgba(255, 87, 87, 0.75) 53%, rgba(194, 114, 255, 1) 100%), #ffffff;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  animation: motto-glow 1s ease-in-out infinite alternate;
+	background: linear-gradient(
+			180deg,
+			rgba(255, 87, 87, 0.75) 53%,
+			rgba(194, 114, 255, 1) 100%
+		),
+		#ffffff;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	animation: motto-glow 1s ease-in-out infinite alternate;
 }
 
 @keyframes motto-glow {
-  from {
-    text-shadow: 0 4px 12px #00000073;
-  }
-  to {
-    text-shadow: 0 4px 24px #ffffff50;
-  }
+	from {
+		text-shadow: 0 4px 12px #00000073;
+	}
+	to {
+		text-shadow: 0 4px 24px #ffffff50;
+	}
 }
 
-
 @keyframes glow {
-  from {
-    text-shadow: 0 0 32px #AD337440;
-  }
-  to {
-    text-shadow: 0 0 48px #AD337460;
-  }
+	from {
+		text-shadow: 0 0 32px #ad337440;
+	}
+	to {
+		text-shadow: 0 0 48px #ad337460;
+	}
 }
 
 .aesthetic-text {
-  background: linear-gradient(#FF5757, #590F92);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  animation: glow 1s ease-in-out infinite alternate;
+	background: linear-gradient(#ff5757, #590f92);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	animation: glow 1s ease-in-out infinite alternate;
 }
 
 /*.design {
@@ -245,17 +238,18 @@ p, h1, h2, h3, h4, h5, h6, a, button {
 }*/
 
 .content h1 {
-	font-family: 'InstrumentSans';
+	font-family: "InstrumentSans";
 	font-size: 80px;
 	margin-bottom: 12px;
 }
 
-.content p, h6 {
+.content p,
+h6 {
 	opacity: 0.7;
 }
 
 .content p {
-	font-family: 'Inter';
+	font-family: "Inter";
 	font-weight: 300;
 	font-size: 30px;
 	margin: 0;
@@ -270,7 +264,7 @@ p, h1, h2, h3, h4, h5, h6, a, button {
 
 .align-left {
 	text-align: left;
-} 
+}
 
 .align-right {
 	text-align: right;
@@ -293,7 +287,9 @@ p, h1, h2, h3, h4, h5, h6, a, button {
 	justify-content: center;
 	border-radius: 8px;
 	border: none;
-/*	width: 120px;*/
+	/*	width: 120px;*/
+	text-decoration: none;
+	cursor: pointer;
 	padding: 0;
 }
 
@@ -305,8 +301,8 @@ p, h1, h2, h3, h4, h5, h6, a, button {
 }
 
 .main-buttons .download {
-	background: #AD3374AA;
-	background: linear-gradient(0deg, #ffffff10 0%, #ffffff00 100%), #AD3374AA;
+	background: #ad3374aa;
+	background: linear-gradient(0deg, #ffffff10 0%, #ffffff00 100%), #ad3374aa;
 	padding: 2px 12px;
 	border: 1px solid #ffffff20;
 	transition-duration: 0.1s;
@@ -314,20 +310,20 @@ p, h1, h2, h3, h4, h5, h6, a, button {
 }
 
 .main-buttons .download:hover {
-	background: #C73B85AA;
-	background: linear-gradient(0deg, #ffffff10 0%, #ffffff00 100%), #C73B85AA;
+	background: #c73b85aa;
+	background: linear-gradient(0deg, #ffffff10 0%, #ffffff00 100%), #c73b85aa;
 	scale: 1.02;
 }
 
 .main-buttons .download:active {
-	background: #942C63AA;
-	background: linear-gradient(0deg, #ffffff10 0%, #ffffff00 100%), #942C63AA;
+	background: #942c63aa;
+	background: linear-gradient(0deg, #ffffff10 0%, #ffffff00 100%), #942c63aa;
 	scale: 0.98;
 }
 
 .main-buttons .github {
-	background: #161b22AA;
-	background: linear-gradient(0deg, #ffffff10 0%, #ffffff00 100%), #161b22AA;
+	background: #161b22aa;
+	background: linear-gradient(0deg, #ffffff10 0%, #ffffff00 100%), #161b22aa;
 	padding: 2px 12px;
 	border: 1px solid #ffffff20;
 	transition-duration: 0.1s;
@@ -335,17 +331,16 @@ p, h1, h2, h3, h4, h5, h6, a, button {
 }
 
 .main-buttons .github:hover {
-	background: #21262dAA;
-	background: linear-gradient(0deg, #ffffff10 0%, #ffffff00 100%), #21262dAA;
+	background: #21262daa;
+	background: linear-gradient(0deg, #ffffff10 0%, #ffffff00 100%), #21262daa;
 	scale: 1.02;
 }
 
 .main-buttons .github:active {
-	background: #0d1117AA;
-	background: linear-gradient(0deg, #ffffff10 0%, #ffffff00 100%), #0d1117AA;
+	background: #0d1117aa;
+	background: linear-gradient(0deg, #ffffff10 0%, #ffffff00 100%), #0d1117aa;
 	scale: 0.98;
 }
-
 
 .img-placeholder {
 	background-color: #ffffff50;
@@ -355,7 +350,7 @@ p, h1, h2, h3, h4, h5, h6, a, button {
 
 .download-btn {
 	padding: 12px 20px;
-/*	background-color: #ffffff00;*/
+	/*	background-color: #ffffff00;*/
 	background-image: linear-gradient(#c82bd9, #7400d9);
 	border: 1px solid #ffffff50;
 	border-radius: 20px;
@@ -439,7 +434,6 @@ p, h1, h2, h3, h4, h5, h6, a, button {
 		scale: 0.8;
 	}
 
-
 	.content {
 		padding: 30px 50px;
 	}
@@ -464,7 +458,7 @@ p, h1, h2, h3, h4, h5, h6, a, button {
 
 	.motto * {
 		font-size: 20px !important;
-	}	
+	}
 
 	.motto {
 		gap: 5px;
@@ -473,7 +467,6 @@ p, h1, h2, h3, h4, h5, h6, a, button {
 	.main-buttons {
 		flex-direction: column;
 	}
-
 
 	.content {
 		padding: 20px 35px;
@@ -486,4 +479,67 @@ p, h1, h2, h3, h4, h5, h6, a, button {
 	.content p {
 		font-size: 15px;
 	}
+}
+
+.main-sm {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	/*	height: 688px*/
+	/*	padding-top: 7.5%;
+	padding-bottom: 7.5%;*/
+	height: calc(25vh - 20px);
+	padding-top: 20px;
+	/*	height: 72%;*/
+	/*	height: calc(688px * (100vh / 1080));*/
+}
+
+.content-sm {
+	background: #ffffff06;
+	border: 1px solid #ffffff40;
+	border-radius: 8px;
+	padding: 45px 50px;
+	width: calc(60% - 50px);
+	height: 500px;
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	box-shadow: 0px -8px 48px #00000040;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 100px;
+}
+
+.content-sm h1 {
+	font-family: "InstrumentSans";
+	font-size: 80px;
+	margin-bottom: 12px;
+}
+
+.content-sm p,
+h6 {
+	opacity: 0.7;
+}
+
+.content-sm p {
+	font-family: "Inter";
+	font-weight: 300;
+	font-size: 30px;
+	margin: 0;
+	margin-bottom: 6px;
+}
+
+.content-sm h6 {
+	margin-top: 0px;
+	text-decoration: italic;
+	font-weight: 300;
+}
+
+.deadspace {
+	margin: 0;
+	padding: 0;
+	height: 200px;
 }

@@ -2,100 +2,159 @@
 <html>
 	<head>
 		<title>AzuOS - AzuSystem</title>
-		<link rel="stylesheet" href="assets/index.css">
-		<link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="assets/index.css" />
+		<link rel="icon" type="image/svg+xml" href="assets/images/logo.svg" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1"
+		/>
 		<meta name="author" content="AzuSystem" />
-		<meta name="description" content="AzuOS is an Arch-based Linux Distro primarily focused on its stunning desktop design." />
+		<meta
+			name="description"
+			content="AzuOS is an Arch-based Linux Distro primarily focused on its stunning desktop design."
+		/>
 		<meta property="og:title" content="AzuOS by AzuSystem" />
-		<meta property="og:description" content="AzuOS is an Arch-based Linux Distro primarily focused on its stunning desktop design." />
-		<meta property="og:image:url" content="https://azusystem.github.io/azuos/assets/images/thumbnail.png" />
-		<meta charset="UTF-8">
-		<!-- <meta name="google-site-verification" content="AZuLeWncVBHmSHMmBnB0DcNkbiY3DFinJ-Rrvg6raNA" /> didnt work, im dumb-->
+		<meta
+			property="og:description"
+			content="AzuOS is an Arch-based Linux Distro primarily focused on its stunning desktop design."
+		/>
+		<meta
+			property="og:image:url"
+			content="https://azusystem.github.io/azuos/assets/images/thumbnail.png"
+		/>
+		<meta charset="UTF-8" />
 	</head>
 	<body>
-		<div class=stars></div>
-		<div class=top-gradient></div>
-		<div class=titlebar>
-			<p class=buttons>AzuOS</p>
-			<img class=logo height=40 src=assets/images/logo.svg>
-			<div class=buttons>
-				<button onclick="window.location.href='./download'">
-					<img src=assets/images/icons/download.svg height=20>
-				</button>
-				<button onclick="window.location.href='./about'">
-					<img src=assets/images/icons/info.svg height=20>
-				</button>
-				<button onclick="window.location.href='./'">
-					<img src=assets/images/icons/home.svg height=20>
-				</button>
+		<div class="top-gradient"></div>
+		<nav>
+			<p class="buttons">AzuOS</p>
+			<a href="./"
+				><img class=logo height=40 src=assets/images/logo.svg></a
+			>
+			<div class="buttons">
+				<a href="./download/">
+					<button>
+						<img src=assets/images/icons/download.svg height=20>
+					</button>
+				</a>
+				<a href="./about/">
+					<button>
+						<img src=assets/images/icons/info.svg height=20>
+					</button></a
+				>
+				<a href="./">
+					<button>
+						<img src=assets/images/icons/home.svg height=20>
+					</button>
+				</a>
 			</div>
-			<!-- <button>yes</button> -->
-		</div>
-		<div class=main>
-			<p class=greeting>AzuOS says 'hii'</p>
-			<div class=redefine-heading>
+		</nav>
+		<div class="main">
+			<p class="greeting">AzuOS says 'hii'</p>
+			<div class="redefine-heading">
 				<p>Redefine your</p>
-				<p class=aesthetic-text>Desktop</p>
+				<p class="aesthetic-text">Desktop</p>
 			</div>
-			<div class=motto>
-				<p class=glow-motto>Aesthetic</p>
+			<div class="motto">
+				<p class="glow-motto">Aesthetic</p>
 				<p>out of the box.</p>
 			</div>
-			<div class=main-buttons>
-				<button class=download onclick="window.location.href='./download'">
-					<img src='assets/images/icons/download.svg' height=30>
-					<p>Download Now</p>
-				</button>
-				<button class=github onclick="window.location.href='https://github.com/AzuSystem'">
-					<img src='assets/images/icons/github.svg' height=30>
-					<p>GitHub</p>
-				</button>
+			<div class="main-buttons">
+				<a href="https://azusystem.github.io/azuos/download"
+					><button class="download">
+						<img
+							src="assets/images/icons/download.svg"
+							height="30"
+						/>
+						<p>Download Now</p>
+					</button></a
+				>
+				<a
+					href="https://github.com/AzuSystem"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<button class="github">
+						<img src="assets/images/icons/github.svg" height="30" />
+						<p>GitHub</p>
+					</button>
+				</a>
 			</div>
 		</div>
-		<div class=content>
-			<div class=noise></div>
-			<div class=align-left>
-				<div class=design>
+		<div class="content">
+			<div class="align-left">
+				<div class="design">
 					<h1>Design</h1>
-					<p>AzuOS features our in-house Desktop Environment&mdash;Azura.</p> <!-- — is an em dash but why -->
-					<p>Featuring Breathtaking, Alluring, never before seen desktop design</p>
+					<p>
+						AzuOS features our in-house Desktop
+						Environment&mdash;Azura.
+					</p>
+					<p>
+						Featuring Breathtaking, Alluring, never before seen
+						desktop design
+					</p>
 					<p>just for you &lt;3</p>
 				</div>
-				<div class=seamless>
+				<div class="seamless">
 					<h1>Seamless</h1>
-					<p>Why spend precious time configuring your system when it can</p>
+					<p>
+						Why spend precious time configuring your system when it
+						can
+					</p>
 					<p>come pre configured to perfection?</p>
-					<p>Everything from networking, to graphics, to drivers, we've done it.</p>
+					<p>
+						Everything from networking, to graphics, to drivers,
+						we've done it.
+					</p>
 				</div>
-				<div class=bleedingedge>
+				<div class="bleedingedge">
 					<h1>Bleeding Edge</h1>
-					<p>Have all the cutting-edge, bleeding-edge features of Linux</p>
-					<p>with AzuOS.</p>
-					<h6>( AzuOS is an Arch-based distro, which has the latest possible software )</h6>
+					<p>
+						Have all the bleeding-edge features of Linux, with
+						AzuOS.
+					</p>
+					<h6>
+						( AzuOS is an Arch-based distro, which has the latest
+						possible software )
+					</h6>
 				</div>
-			</div>	
-			<div class=align-right>
-				<div class=performance>
+			</div>
+			<div class="align-right">
+				<div class="performance">
 					<h1>Performance</h1>
-					<p>Despite the fancy effects, AzuOS manages to remain under 1GB</p> <!-- — is an em dash but why -->
-					<p>in memory usage&mdash;giving you the rest simply because</p>
+					<p>
+						Despite the fancy effects, AzuOS manages to remain under
+						1GB
+					</p>
+					<!-- — is an em dash but why -->
+					<p>
+						in memory usage&mdash;giving you the rest simply because
+					</p>
 					<p>why must we hog it all? :3</p>
 				</div>
-				<div class=personalize>
+				<div class="personalize">
 					<h1>Personalization</h1>
 					<p>Bring life to your desktop, with personalization.</p>
-					<p>AzuOS itself has a unique design&mdash;which can be themed in</p>
+					<p>
+						AzuOS itself has a unique design&mdash;which can be
+						themed in
+					</p>
 					<p>various ways, to feel right at home.</p>
 				</div>
-				<div class=effortless>
+				<div class="effortless">
 					<h1>Effortless</h1>
-					<p>AzuOS features a variety of utilities to make linux easier</p>
-					<p>Everything from package management, to updates, to configuration.</p>
+					<p>
+						AzuOS features a variety of utilities to make linux
+						easier
+					</p>
+					<p>
+						Everything from package management, to updates, to
+						configuration.
+					</p>
 					<p>Don't know how to use the terminal? We've gotchu.</p>
 				</div>
-			</div>	
-			<!-- <p>download because yes</p> -->
+			</div>
+			<div class="deadspace"></div>
 		</div>
 	</body>
 </html>
